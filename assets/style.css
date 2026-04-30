@@ -1,4 +1,4 @@
-body {
+#index-body {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -22,4 +22,117 @@ body {
     width: 400px;   
      height: auto; 
       filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.5));
+}
+
+/* Reset para tela inteira */
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #000;
+    overflow: hidden; /* Evita rolagem se não precisar */
+}
+
+#monitor-full-gelado {
+    background-color: #000;
+    color: #00c3ff;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+    border: 10px solid #001a22;
+}
+
+#cabecalho-principal {
+    border-bottom: 2px solid #00c3ff;
+    margin-bottom: 20px;
+}
+
+#label-top-secret {
+    font-weight: bold;
+    letter-spacing: 3px;
+    margin-left: 20px;
+}
+
+#id-personagem {
+    font-size: 2.5rem;
+    margin: 10px 0;
+}
+
+#grid-informacoes {
+    display: grid;
+    grid-template-columns: 1fr 300px;
+    grid-template-rows: auto 1fr;
+    gap: 20px;
+    flex-grow: 1;
+}
+
+.stat-item {
+    margin-bottom: 15px;
+    font-weight: bold;
+}
+
+.barra-externa {
+    width: 300px;
+    height: 15px;
+    background: #001a22;
+    display: inline-block;
+    border: 1px solid #00c3ff;
+}
+
+.p-cheio {
+    height: 100%;
+    background: #00c3ff;
+    box-shadow: 0 0 10px #00c3ff;
+}
+
+#p-poder { width: 95%; }
+#p-forca { width: 65%; }
+#p-res { width: 75%; }
+#p-int { width: 85%; }
+#p-agi { width: 90%; }
+
+#moldura-scanner {
+    border: 3px solid #00c3ff;
+    background: #001a22;
+    padding: 10px;
+}
+
+#img-perfil-gelado {
+    width: 100%;
+    filter: brightness(1.2) contrast(1.2) sepia(1) hue-rotate(150deg);
+}
+
+#sessao-dados-detalhados {
+    grid-column: span 2;
+    display: flex;
+    gap: 20px;
+}
+
+.box-texto {
+    flex: 1;
+    border: 2px solid #00c3ff;
+}
+
+.header-box {
+    background: #00c3ff;
+    color: #000;
+    margin: 0;
+    padding: 5px;
+}
+
+.box-texto p {
+    padding: 5px 15px;
+    margin: 0;
+    font-size: 0.9rem;
+}
+
+#rodape-monitor {
+    display: flex;
+    justify-content: space-between;
+    font-size: 0.8rem;
+    border-top: 1px solid #00c3ff;
+    padding-top: 10px;
+    margin-top: 20px;
 }
