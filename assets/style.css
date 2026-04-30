@@ -1,0 +1,25 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: rgb(0, 153, 153);
+}
+
+#simbolo-inicio {
+    background: transparent;
+    border: none;
+    outline: none;
+    padding: 0;
+    cursor: pointer;  
+    height: auto; 
+    display: block;
+}
+
+#simbolo-inicio img {
+    display: block;
+    width: 400px;   
+     height: auto; 
+      filter: drop-shadow(0px 10px 15px rgba(0, 0, 0, 0.5));
+}
